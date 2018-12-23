@@ -1,0 +1,80 @@
+.toggle-container {
+  display: block;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 13px;
+  height: 70px;
+  background: white;
+  opacity: 0.6;
+  font-family: "PFDinTextPro-Regular", "Arial", sans-serif;
+  font-size: 19px;
+  cursor: pointer;
+
+  @media ($desktop-width) {
+    display: none;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: left;
+
+  &:after {
+    content: url("../../img/arrow.png");
+}
+}
+
+.button-toggle__trade:before {
+  content: url("../../img/icon1-mini.png");
+}
+
+.button-toggle__investment:before {
+  content: url("../../img/icon2-mini.png");
+}
+
+.button-toggle__attract-investment:before {
+  content: url("../../img/icon3-mini.png");
+}
+
+#toggle__trade, #toggle__investment, #toggle__attract-investment  {
+  display: none;
+}
+
+#toggle__trade:checked {
+  & ~ .slide__trade {
+    display: block;
+  }
+}
+
+#toggle__investment:checked {
+  & ~ .slide__investment {
+    display: block;
+  }
+}
+
+#toggle__attract-investment:checked {
+  & ~ .slide__attract-investment {
+    display: block;
+  }
+}
+
+.header-mobile {  
+  display: block;
+  padding-bottom: 27px;
+  padding-top: 40px;
+  font-size: 36px;
+  font-family: "PFDinTextPro-Light", "Arial", sans-serif;
+  text-align: center;
+
+  @media ($desktop-width) {
+    display: none;
+  }
+}
