@@ -352,11 +352,22 @@
 }
 
 .show[data-slide="trade"] .tabs__content {
-  transform: translate3d(0, 0, 0);
+
+  @media ($desktop-width) {
+   transform: translate3d(0, 0, 0);
+  }
 }
+
 .show[data-slide="investment"] .tabs__content {
-  transform: translate3d(-100%, 0, 0);
+
+  @media ($desktop-width) {
+   transform: translate3d(-100%, 0, 0);
+  }
 }
+
 .show[data-slide="attract-investment"] .tabs__content {
-  transform: translate3d(-200%, 0, 0);
+
+  @media ($desktop-width) {
+   transform: translate3d(-200%, 0, 0);
+  }
 }
